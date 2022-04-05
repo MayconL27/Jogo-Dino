@@ -1,0 +1,51 @@
+*{
+    
+    background: rgb(56, 102, 102);
+    font: normal 15pt Arial;
+}
+#game{
+    background: white;
+    
+    padding: 15px;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+
+}
+
+#personagem{
+    width: 20px;
+    height: 50px;
+    background-color: red ;
+    position: relative;
+    top: 165px;
+     
+}
+.animar{
+    animation: personagem 500ms infinite;
+}
+
+@keyframes personagem {
+    0%{top: 165px;}
+    30%{top: 100px;}
+    70%{top: 100px;} 
+    100%{top: 150px;}  
+     
+}
+
+
+#quadrado{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 145px;
+    left: 495px;
+    animation: quadrado 1s infinite linear;
+}
+
+@keyframes quadrado {
+    0%{left: 480px;}
+    100%{left: -15px;}   
+}
