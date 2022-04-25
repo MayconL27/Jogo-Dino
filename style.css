@@ -32,8 +32,8 @@ body{
 
 @keyframes personagem {
     0%{top: 150px;} /* Ponto Inicial */
-    30%{top: 70px;}
-    70%{top: 70px;} 
+    30%{top: 60px;}
+    70%{top: 60px;} 
     100%{top: 150px;}  /*Finalizar animação */
      
 }
