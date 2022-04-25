@@ -1,6 +1,8 @@
 
 let personagem = document.querySelector('#personagem')
 let quadrado = document.querySelector('#quadrado')
+var res = document.querySelector('div#res')
+
 function pular() {
     // Adicionar classe .animar
     if(personagem.classList != 'animar'){
@@ -25,6 +27,7 @@ var testarColisao = setInterval( function(){
         quadrado.style.animation = 'none'
         quadrado.style.display = 'none'
         alert('Você perdeu!')
+        res.innerHTML = 'Fim de jogo <br> Aperte F5 para reiniciar'
     }
     
 

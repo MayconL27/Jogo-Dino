@@ -57,3 +57,7 @@ body{
     color: white;
     text-align: center;
 }
+#res {
+    color: red;
+    text-align: center;
+}
