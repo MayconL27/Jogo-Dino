@@ -31,10 +31,10 @@ body{
 }
 
 @keyframes personagem {
-    0%{top: 165px;}
-    30%{top: 100px;}
-    70%{top: 100px;} 
-    100%{top: 150px;}  
+    0%{top: 150px;} /* Ponto Inicial */
+    30%{top: 70px;}
+    70%{top: 70px;} 
+    100%{top: 150px;}  /*Finalizar animação */
      
 }
 
@@ -45,7 +45,7 @@ body{
     position: relative;
     top: 90px;
     left: 495px;
-    animation: quadrado 1s infinite linear;
+    animation: quadrado 1s infinite linear; /* movimentar cacto*/
 }
 
 /* Animação de movimento do cacto */
