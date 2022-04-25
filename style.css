@@ -11,21 +11,19 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
     border-radius: 10px;
 }
-#nome {
-    
+#nome {  
     color: white;
     text-align: center;
     font-style: italic;
-    padding: 15px;
-    
+    padding: 15px; 
 }
 
 #personagem{
-    width: 60px;
-    height: 60px;
-    background-image: url('img/dino.png');
+    width: 63px;
+    height: 63px;
+    background-image: url('img/dino.gif');
     position: relative;
-    top: 150px;
+    top: 148px;
      
 }
 .animar{
@@ -45,7 +43,7 @@ body{
     height: 60px;
     background-image: url('img/cactus.png');
     position: relative;
-    top: 95px;
+    top: 90px;
     left: 495px;
     animation: quadrado 1s infinite linear;
 }
