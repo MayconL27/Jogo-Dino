@@ -48,7 +48,8 @@ body{
     animation: quadrado 1s infinite linear;
 }
 
+/* Animação de movimento do cacto */
 @keyframes quadrado {
-    0%{left: 480px;}
-    100%{left: -15px;}   
+    0%{left: 440px;} /* Posição de inicio do cacto*/
+    100%{left: -17px;}   /* Posição de sair da tela*/
 }
