@@ -1,31 +1,31 @@
 
-let personagem = document.querySelector('#personagem')
-let quadrado = document.querySelector('#quadrado')
+let dino = document.querySelector('#dino')
+let cacto = document.querySelector('#cacto')
 var res = document.querySelector('div#res')
 
 function pular() {
     // Adicionar classe .animar
-    if(personagem.classList != 'animar'){
-        personagem.classList.add('animar')
+    if(dino.classList != 'animar'){
+        dino.classList.add('animar')
     }
     // Pausar pulo
     setTimeout(function(){
-        personagem.classList.remove('animar')
+        dino.classList.remove('animar')
     }, 500)
     
 }
 var testarColisao = setInterval( function(){
 
-    var topoPersonagem = parseInt(
-     window.getComputedStyle(personagem).getPropertyValue('top')
+    var topoDino = parseInt(
+     window.getComputedStyle(dino).getPropertyValue('top')
     )
-    var EsquerdaQuadrado = parseInt(
-        window.getComputedStyle(quadrado).getPropertyValue('left')
+    var EsquerdaCacto = parseInt(
+        window.getComputedStyle(cacto).getPropertyValue('left')
        )
 
-       if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoPersonagem >= 130){
-        quadrado.style.animation = 'none'
-        quadrado.style.display = 'none'
+       if(EsquerdaCacto < 20 && EsquerdaCacto > 0 && topoDino >= 130){
+        cacto.style.animation = 'none'
+        cacto.style.display = 'none'
         alert('Você perdeu!')
         res.innerHTML = 'Fim de jogo <br> Aperte F5 para reiniciar'
     }

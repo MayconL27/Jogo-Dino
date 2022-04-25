@@ -18,7 +18,7 @@ body{
     padding: 15px; 
 }
 
-#personagem{
+#dino{
     width: 63px;
     height: 63px;
     background-image: url('img/dino.gif');
@@ -27,10 +27,10 @@ body{
      
 }
 .animar{
-    animation: personagem 500ms infinite;
+    animation: dino 500ms infinite;
 }
 
-@keyframes personagem {
+@keyframes dino {
     0%{top: 150px;} /* Ponto Inicial */
     30%{top: 60px;}
     70%{top: 60px;} 
@@ -38,18 +38,18 @@ body{
      
 }
 
-#quadrado{
+#cacto{
     width: 60px;
     height: 60px;
     background-image: url('img/cactus.png');
     position: relative;
     top: 90px;
     left: 495px;
-    animation: quadrado 1s infinite linear; /* movimentar cacto*/
+    animation: cacto 1s infinite linear; /* movimentar cacto*/
 }
 
 /* Animação de movimento do cacto */
-@keyframes quadrado {
+@keyframes cacto {
     0%{left: 440px;} /* Posição de inicio do cacto*/
     100%{left: -17px;}   /* Posição de sair da tela*/
 }
